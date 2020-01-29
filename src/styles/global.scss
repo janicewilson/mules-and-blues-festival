@@ -1,0 +1,52 @@
+$color-azure: #1ba19a;
+$color-gold: #fba128;
+$color-sienna: #d0552c;
+$color-turquoise: #227587;
+
+$rounded: 0.3rem;
+
+$hover: brightness(103%);
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  align-items: center;
+  background-color: $color-turquoise;
+  color: $color-sienna;
+  display: flex;
+  flex-flow: column nowrap;
+  font-weight: 300;
+  justify-content: center;
+  min-height: 100%;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  -webkit-animation: fadein 3s;
+}
+
+div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  img.logo {
+    width: 80%;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
